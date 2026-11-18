@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>눌림목 신호</title>
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="눌림목"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#14171f">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<style>
+:root{--bg:#14171f;--card:#1c212b;--line:#2b3342;--tx:#e6e9ef;--mu:#8a94a6;--up:#ef5350;--dn:#4a90ff;--ok:#3ddc97;--no:#5d667a;--amber:#f2b84b}
+*{box-sizing:border-box}body{margin:0;padding:14px;max-width:1000px;margin:auto;background:var(--bg);color:var(--tx);font-family:-apple-system,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;line-height:1.5}
+h1{font-size:1.3rem;margin:6px 0 2px}h2{font-size:1.02rem;margin:0 0 10px}.mu{color:var(--mu);font-size:.86rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:10px}
+label{display:block;font-size:.8rem;color:var(--mu);margin-bottom:4px}
+input{width:100%;padding:9px;border:1px solid var(--line);border-radius:7px;background:#12151c;color:var(--tx);font:inherit}
+button{font:inherit;font-weight:700;border:0;border-radius:7px;padding:10px 14px;margin:10px 8px 0 0;cursor:pointer;background:var(--amber);color:#1a1405}
+button.sub{background:#2a3242;color:var(--tx)}button:focus-visible,input:focus-visible{outline:2px solid var(--dn);outline-offset:2px}
+.hero{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.badge{font-size:1.5rem;font-weight:800}.sig{color:var(--amber)}.near{color:var(--dn)}.none{color:var(--mu)}
+.chk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px 18px;margin-top:10px}
+.chk div{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.chk b{font-weight:600}.p{color:var(--ok)}.f{color:var(--no)}.v{font-variant-numeric:tabular-nums;color:var(--mu)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:10px}
+.kpi{background:#12151c;border:1px solid var(--line);border-radius:8px;padding:9px}.kpi span{display:block;font-size:.75rem;color:var(--mu)}.kpi b{font-size:1.1rem;font-variant-numeric:tabular-nums}
+.tw{overflow:auto;max-height:480px}table{border-collapse:collapse;width:100%;white-space:nowrap;font-size:.83rem;font-variant-numeric:tabular-nums}
+th,td{padding:7px 8px;text-align:right;border-bottom:1px solid var(--line)}th{position:sticky;top:0;background:#222836;color:var(--mu);font-weight:600}td:first-child,th:first-child{text-align:left}
+.u{color:var(--up)}.d{color:var(--dn)}.err{color:#ff8a80}
+</style></head><body>
+<h1>눌림목 매매신호</h1>
+<p class="mu">두 가지 신호를 찾습니다. ① 상승 추세 안에서 25일선 부근까지 조정받은 뒤 반등하는 눌림목, ② 25일선 아래에 있다가 위로 올라서는 25일선 상향 돌파. 신호는 종가 기준이며 다음 거래일 시가 진입을 가정합니다.</p>
+
+<div class="card"><h2>일봉 CSV</h2>
+<p class="mu">KRX 형식(일자, 종가, 시가, 고가, 저가, 거래량)을 그대로 올리면 됩니다. 최신순·과거순 모두 인식합니다. 주봉 20선 판단에는 최소 20주(약 100거래일)가 필요하며, 부족하면 해당 조건은 건너뜁니다.</p>
+<input id="file" type="file" accept=".csv,text/csv">
+<h2 style="margin-top:14px">조건 기준 (수정 가능)</h2>
+<div class="grid">
+<div><label>ADX 최소</label><input id="adx" type="number" value="25"></div>
+<div><label>RSI 최소</label><input id="rsiMin" type="number" value="45"></div>
+<div><label>RSI 최대</label><input id="rsiMax" type="number" value="70"></div>
+<div><label>눌림 깊이 (ATR 배수)</label><input id="depth" type="number" value="1" step="0.1"></div>
+<div><label>이격률(25일) 최대 (%)</label><input id="disp" type="number" value="108"></div>
+<div><label>이격률(75일) 제외 기준 (%)</label><input id="disp75" type="number" value="125"></div>
+<div><label>25일선 터치 허용 (%)</label><input id="touch" type="number" value="2" step="0.5"></div>
+</div>
+<button id="run">분석하기</button><button class="sub" id="dl">백테스트용 CSV 저장</button><button class="sub" id="reset">기본값으로</button>
+<p id="st" class="mu">CSV를 선택하세요.</p></div>
+
+<div class="card" id="today" hidden></div>
+<div class="card" id="stats" hidden></div>
+<div class="card" id="list" hidden></div>
+
+<div class="card"><h2>신호 조건</h2><p class="mu">
+추세: 종가가 일봉 25일선 위, 25일선이 5일 전보다 상승, 종가가 주봉 20선 위, ADX가 기준 이상이면서 PDI가 MDI보다 높음.<br>
+[눌림목] 필수: 종가 > 25일선, 25일선 5일 상승, 주봉 20선 위, ADX 기준 이상 + PDI > MDI, 고점 대비 눌림 깊이, 25일 이격률 기준 이하, 25일선 부근 접근, 양봉 반등. 보조: RSI 범위, 조정 중 거래량 감소.<br>
+[25일선 상향 돌파] 필수: 전일 종가가 25일선 이하였다가 오늘 종가가 25일선 위, 양봉 반등, 25일 이격률 기준 이하. 보조: 25일선 하락 멈춤, 거래량 증가, RSI 범위, 주봉 20선 위.<br>
+[공통 제외] 75일 이격률이 제외 기준 이상이면 두 신호 모두 제외합니다(75일선이 계산되지 않는 초반 구간은 이 조건을 건너뜀).<br>
+필수 조건이 모두 맞으면 신호, 하나만 부족하면 후보이고, 보조 조건은 신호 판정 대신 충족 개수만 표시합니다. 수수료와 세금은 반영하지 않았습니다.</p></div>
+
+<script>
+/*CORE*/
+const $=id=>document.getElementById(id), num=v=>{const x=parseFloat(String(v??'').replace(/,/g,''));return Number.isFinite(x)?x:NaN};
+function parseCSV(s){
+ s=s.replace(/^\uFEFF/,'');const rows=[];let r=[],f='',q=false;
+ for(let i=0;i<s.length;i++){const c=s[i];
+  if(c==='"'){if(q&&s[i+1]==='"'){f+='"';i++}else q=!q}
+  else if(c===','&&!q){r.push(f.trim());f=''}
+  else if((c==='\n'||c==='\r')&&!q){if(c==='\r'&&s[i+1]==='\n')i++;r.push(f.trim());f='';if(r.some(x=>x))rows.push(r);r=[]}
+  else f+=c}
+ if(f||r.length){r.push(f.trim());rows.push(r)}
+ if(rows.length<30)throw Error('데이터가 부족합니다. 일봉 30개 이상이 필요합니다.');
+ const h=rows[0].map(x=>x.toLowerCase().replace(/[\s_()-]/g,''));
+ const ix=(ex,part)=>{let k=h.findIndex(x=>ex.includes(x));return k>=0?k:h.findIndex(x=>part.some(p=>x.includes(p)))};
+ const c={date:ix(['일자','날짜','date'],['일자','날짜']),open:ix(['시가','open'],['open']),high:ix(['고가','high'],['high']),low:ix(['저가','low'],['low']),close:ix(['종가','close'],['close']),vol:ix(['거래량','volume'],['거래량','volume'])};
+ for(const k in c)if(c[k]<0)throw Error('필수 열이 없습니다: 일자, 시가, 고가, 저가, 종가, 거래량');
+ const d=rows.slice(1).map(x=>({date:x[c.date].replace(/[./]/g,'-').slice(0,10),o:num(x[c.open]),h:num(x[c.high]),l:num(x[c.low]),c:num(x[c.close]),v:num(x[c.vol])}))
+  .filter(x=>/^\d{4}-\d\d-\d\d$/.test(x.date)&&[x.o,x.h,x.l,x.c].every(y=>y>0)&&Number.isFinite(x.v));
+ d.sort((a,b)=>a.date<b.date?-1:1);return d}
+const wk=s=>{const t=new Date(s+'T00:00:00Z'),w=(t.getUTCDay()+6)%7;t.setUTCDate(t.getUTCDate()-w);return t.toISOString().slice(0,10)};
+function indicators(d){
+ const n=d.length,N=14,A=k=>new Array(n).fill(NaN);
+ const ma25=A(),rsi=A(),atr=A(),adx=A(),pdi=A(),mdi=A(),vma=A(),wma=A();
+ const ma75=A(),av=(i,w,f)=>{let t=0;for(let j=i-w+1;j<=i;j++)t+=f(d[j]);return t/w};
+ for(let i=19;i<n;i++)vma[i]=av(i,20,y=>y.v);
+ for(let i=24;i<n;i++)ma25[i]=av(i,25,y=>y.c);
+ for(let i=74;i<n;i++)ma75[i]=av(i,75,y=>y.c);
+ let ag=0,al=0;
+ for(let i=1;i<n;i++){const df=d[i].c-d[i-1].c,g=Math.max(df,0),l=Math.max(-df,0);
+  if(i<=N){ag+=g/N;al+=l/N}else{ag=(ag*(N-1)+g)/N;al=(al*(N-1)+l)/N}
+  if(i>=N)rsi[i]=al===0?100:100-100/(1+ag/al)}
+ let tr=0,pm=0,mm=0,dx=[],ax=NaN;
+ for(let i=1;i<n;i++){const u=d[i].h-d[i-1].h,w=d[i-1].l-d[i].l,t=Math.max(d[i].h-d[i].l,Math.abs(d[i].h-d[i-1].c),Math.abs(d[i].l-d[i-1].c));
+  const p=u>w&&u>0?u:0,m=w>u&&w>0?w:0;
+  if(i<=N){tr+=t;pm+=p;mm+=m}else{tr+=t-tr/N;pm+=p-pm/N;mm+=m-mm/N}
+  if(i>=N){atr[i]=tr/N;pdi[i]=100*pm/tr;mdi[i]=100*mm/tr;const s=pdi[i]+mdi[i],x=s?100*Math.abs(pdi[i]-mdi[i])/s:0;
+   if(dx.length<N){dx.push(x);if(dx.length===N){ax=dx.reduce((a,b)=>a+b)/N;adx[i]=ax}}else{ax=(ax*(N-1)+x)/N;adx[i]=ax}}}
+ const wc=[];let last='';
+ for(let i=0;i<n;i++){const k=wk(d[i].date);if(k!==last){wc.push(d[i].c);last=k}else wc[wc.length-1]=d[i].c;
+  if(wc.length>=20)wma[i]=wc.slice(-20).reduce((a,b)=>a+b)/20}
+ return {ma25,ma75,rsi,atr,adx,pdi,mdi,vma,wma}}
+function analyze(d,P){
+ const I=indicators(d),n=d.length,out=[];
+ for(let i=0;i<n;i++){
+  const need=[I.ma25[i],I.ma25[i-5],I.rsi[i],I.adx[i],I.atr[i],I.vma[i]];
+  if(i<25||need.some(x=>!Number.isFinite(x))){out.push(null);continue}
+  const x=d[i],pv=d[i-1],m=I.ma25[i],hi10=Math.max(...d.slice(i-9,i+1).map(y=>y.h)),dep=(hi10-x.c)/I.atr[i],disp=x.c/m*100,d75=Number.isFinite(I.ma75[i])?x.c/I.ma75[i]*100:NaN;
+  const lo3=Math.min(...d.slice(i-2,i+1).map(y=>y.l)),v5=d.slice(i-5,i).reduce((s,y)=>s+y.v,0)/5,hasW=Number.isFinite(I.wma[i]);
+  const cUp=['양봉 반등 확인',x.c>x.o&&x.c>pv.c,((x.c/pv.c-1)*100).toFixed(2)+'%'],
+   cDisp=['이격률(25일) 기준 이하',disp<=P.disp,disp.toFixed(1)+'%'],
+   c75=['이격률(75일) 제외 기준 미만',Number.isFinite(d75)?d75<P.disp75:null,Number.isFinite(d75)?d75.toFixed(1)+'%':'데이터 부족'],
+   RS=o=>['RSI 범위 안',I.rsi[i]>=P.rsiMin&&I.rsi[i]<=P.rsiMax,I.rsi[i].toFixed(1),o],
+   W=o=>['종가 > 주봉 20선',hasW?x.c>I.wma[i]:null,hasW?I.wma[i].toFixed(0):'데이터 부족',o];
+  const grade=ck=>{const rq=ck.filter(c=>!c[3]&&c[1]!==null),fail=rq.filter(c=>!c[1]).length,op=ck.filter(c=>c[3]);return {ck,sig:fail===0,near:fail===1,opt:op.filter(c=>c[1]).length,optN:op.length}};
+  const pb=grade([
+   ['종가 > 일봉 25일선',x.c>m,m.toFixed(0)],
+   ['25일선 5일 상승',m>I.ma25[i-5],((m/I.ma25[i-5]-1)*100).toFixed(2)+'%'],
+   W(0),
+   ['ADX 기준 이상, PDI > MDI',I.adx[i]>=P.adx&&I.pdi[i]>I.mdi[i],`${I.adx[i].toFixed(1)} / ${I.pdi[i].toFixed(1)} / ${I.mdi[i].toFixed(1)}`],
+   RS(1),
+   ['고점 대비 눌림 깊이',dep>=P.depth,dep.toFixed(2)+' ATR'],
+   cDisp,c75,
+   ['25일선 부근 접근',lo3<=m*(1+P.touch/100),((lo3/m-1)*100).toFixed(1)+'%'],
+   ['조정 중 거래량 감소',v5<I.vma[i],(v5/I.vma[i]*100).toFixed(0)+'%',1],
+   cUp]);
+  const bo=grade([
+   ['25일선 상향 돌파',pv.c<=I.ma25[i-1]&&x.c>m,(pv.c/I.ma25[i-1]*100).toFixed(1)+'% → '+disp.toFixed(1)+'%'],
+   cUp,cDisp,c75,
+   ['25일선 하락 멈춤',m>=I.ma25[i-3],((m/I.ma25[i-3]-1)*100).toFixed(2)+'%',1],
+   ['거래량 증가',x.v>I.vma[i],(x.v/I.vma[i]*100).toFixed(0)+'%',1],
+   RS(1),W(1)]);
+  const e=i+1<n?d[i+1].o:NaN,R={};
+  for(const h of [5,10,20])R[h]=i+h<n&&e>0?(d[i+h].c/e-1)*100:NaN;
+  const sig=pb.sig||bo.sig;
+  out.push({i,pb,bo,sig,near:!sig&&(pb.near||bo.near),type:pb.sig&&bo.sig?'눌림목·돌파':pb.sig?'눌림목':bo.sig?'25일선 돌파':'',atr:I.atr[i],ret:R,mae:i+10<n?(Math.min(...d.slice(i+1,i+11).map(y=>y.l))/e-1)*100:NaN,dep,disp,d75,rsi:I.rsi[i],adx:I.adx[i]})}
+ return out}
+/*ENDCORE*/
+let D=null,A=null;
+const f0=v=>Math.round(v).toLocaleString('ko-KR'),pc=v=>Number.isFinite(v)?`<span class="${v>=0?'u':'d'}">${v>=0?'+':''}${v.toFixed(1)}%</span>`:'<span class="mu">—</span>';
+const params=()=>({adx:num($('adx').value),rsiMin:num($('rsiMin').value),rsiMax:num($('rsiMax').value),depth:num($('depth').value),disp:num($('disp').value),disp75:num($('disp75').value),touch:num($('touch').value)});
+const KEY='pullback_params_v1',IDS=['adx','rsiMin','rsiMax','depth','disp','disp75','touch'],DEF={};
+IDS.forEach(k=>DEF[k]=$(k).value);
+try{const sv=JSON.parse(localStorage.getItem(KEY)||'{}');IDS.forEach(k=>{if(sv[k]!==undefined&&sv[k]!=='')$(k).value=sv[k]})}catch(e){}
+const save=()=>{try{const o={};IDS.forEach(k=>o[k]=$(k).value);localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}};
+IDS.forEach(k=>$(k).addEventListener('input',save));
+$('reset').onclick=()=>{IDS.forEach(k=>$(k).value=DEF[k]);save();$('st').textContent='기본값으로 되돌렸습니다. 분석하기를 눌러 반영하세요.';$('st').className='mu'};
+function show(){
+ const sig=A.filter(a=>a&&a.sig),last=A[A.length-1],t=$('today');t.hidden=false;
+ const blk=(n,R)=>`<p style="margin:14px 0 0"><b>${n}</b> <span class="mu">${R.sig?'신호':R.near?'후보 (1개 부족)':'조건 미충족'} · 보조 ${R.opt}/${R.optN}</span></p><div class="chk">${R.ck.map(c=>`<div><b class="${c[1]===null?'v':c[1]?'p':'f'}">${c[1]===null?'–':c[1]?'✓':'✗'} ${c[0]}${c[3]?' (보조)':''}</b><span class="v">${c[2]}</span></div>`).join('')}</div>`;
+ if(!last){t.innerHTML='<h2>오늘 상태</h2><p class="mu">지표 계산에 필요한 데이터가 부족합니다.</p>'}
+ else{const k=last.sig?['신호 발생 · '+last.type,'sig']:last.near?['후보 (1개 부족)','near']:['신호 없음','none'],x=D[D.length-1];
+  t.innerHTML=`<div class="hero"><span class="badge ${k[1]}">${k[0]}</span><span class="mu">${x.date} · 종가 ${f0(x.c)}원 · ATR ${f0(last.atr)}</span></div>`+blk('눌림목',last.pb)+blk('25일선 상향 돌파',last.bo)}
+ const done=sig.filter(s=>Number.isFinite(s.ret[10])),w=done.filter(s=>s.ret[10]>0).length,avg=a=>a.length?a.reduce((s,v)=>s+v,0)/a.length:NaN;
+ const ty=a=>{const e=a.filter(s=>Number.isFinite(s.ret[10]));return `<td>${a.length}</td><td>${e.length?(e.filter(s=>s.ret[10]>0).length/e.length*100).toFixed(0)+'%':'—'}</td><td>${pc(avg(e.map(s=>s.ret[10])))}</td>`};
+ $('stats').hidden=false;$('stats').innerHTML=`<h2>신호 이후 성과 (다음 날 시가 진입)</h2><div class="kpis">
+ <div class="kpi"><span>신호 횟수</span><b>${sig.length}회</b></div>
+ <div class="kpi"><span>10일 후 승률</span><b>${done.length?(w/done.length*100).toFixed(0)+'%':'—'}</b></div>
+ <div class="kpi"><span>5일 평균</span><b>${pc(avg(sig.map(s=>s.ret[5]).filter(Number.isFinite)))}</b></div>
+ <div class="kpi"><span>10일 평균</span><b>${pc(avg(done.map(s=>s.ret[10])))}</b></div>
+ <div class="kpi"><span>20일 평균</span><b>${pc(avg(sig.map(s=>s.ret[20]).filter(Number.isFinite)))}</b></div>
+ <div class="kpi"><span>10일 내 최대 하락 평균</span><b>${pc(avg(done.map(s=>s.mae)))}</b></div></div>
+ <div class="tw"><table><tr><th>유형별</th><th>횟수</th><th>10일 승률</th><th>10일 평균</th></tr><tr><td>눌림목</td>${ty(sig.filter(s=>s.pb.sig))}</tr><tr><td>25일선 돌파</td>${ty(sig.filter(s=>s.bo.sig))}</tr></table></div>
+ <p class="mu">신호 수가 적으면 평균은 참고용입니다. 기준값을 바꿔 가며 비교해 보세요.</p>`;
+ $('list').hidden=false;$('list').innerHTML=`<h2>신호 목록</h2>`+(sig.length?`<div class="tw"><table><tr><th>신호일</th><th>유형</th><th>종가</th><th>눌림(ATR)</th><th>보조</th><th>RSI</th><th>ADX</th><th>이격률(25)</th><th>이격률(75)</th><th>ATR</th><th>참고 손절가</th><th>5일</th><th>10일</th><th>20일</th></tr>`+
+  sig.slice().reverse().map(s=>{const x=D[s.i],R=s.pb.sig?s.pb:s.bo;return `<tr><td>${x.date}</td><td>${s.type}</td><td>${f0(x.c)}</td><td>${s.dep.toFixed(2)}</td><td>${R.opt}/${R.optN}</td><td>${s.rsi.toFixed(1)}</td><td>${s.adx.toFixed(1)}</td><td>${s.disp.toFixed(1)}%</td><td>${Number.isFinite(s.d75)?s.d75.toFixed(1)+'%':'—'}</td><td>${f0(s.atr)}</td><td>${f0(x.c-2*s.atr)}</td><td>${pc(s.ret[5])}</td><td>${pc(s.ret[10])}</td><td>${pc(s.ret[20])}</td></tr>`}).join('')+`</table></div><p class="mu">참고 손절가는 종가 − ATR×2입니다.</p>`:'<p class="mu">이 기준에 맞는 신호가 없습니다. 눌림 깊이나 ADX 기준을 낮춰 보세요.</p>')}
+function run(txt){try{D=parseCSV(txt);A=analyze(D,params());show();const c=A.filter(a=>a&&a.sig).length;$('st').textContent=`분석 완료: 일봉 ${D.length}개, 신호 ${c}회`;$('st').className='mu'}catch(e){$('st').textContent=e.message;$('st').className='err'}}
+function go(){const f=$('file').files[0];if(!f){$('st').textContent='먼저 CSV 파일을 선택하세요.';$('st').className='err';return}if(D&&f.name===go.n&&go.t){return run(go.t)}const r=new FileReader();r.onload=()=>{go.n=f.name;go.t=r.result;run(r.result)};r.readAsText(f,'UTF-8')}
+$('file').onchange=()=>{go.t=null;go()};$('run').onclick=()=>{go.t=null;go()};
+$('dl').onclick=()=>{if(!D){$('st').textContent='먼저 분석을 실행하세요.';$('st').className='err';return}
+ const s='일자,종가,시가,고가,저가,ATR,Buy\n'+D.map((x,i)=>{const a=A[i],b=a&&a.sig;return [x.date,x.c,x.o,x.h,x.l,b?a.atr.toFixed(2):'',b?1:0].join(',')}).join('\n');
+ const l=document.createElement('a');l.href=URL.createObjectURL(new Blob(['\uFEFF'+s],{type:'text/csv;charset=utf-8'}));l.download='pullback_buy_signals.csv';l.click();URL.revokeObjectURL(l.href)};
+</script></body></html>
